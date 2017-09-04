@@ -31,5 +31,12 @@ public class Bookshelf{
   public boolean isShelfFull(){
     return this.bookCount() == this.list.length;
   }
-
+  public boolean isBookshelfFull(){
+    return this.bookCount() == this.list.length;
+  }
+  public void empty(){
+    for(int i=0; i < list.length; i++){
+      list[i] = null;
+    }
+  }
 }
